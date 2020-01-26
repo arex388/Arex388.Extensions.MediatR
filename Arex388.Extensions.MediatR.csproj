@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>MediatR extensions for implementing the Projection-Result pattern.</Description>
+    <PackageProjectUrl>https://github.com/arex388/Arex388.Extensions.MediatR</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/arex388/Arex388.Extensions.MediatR</RepositoryUrl>
+    <PackageTags>arex388 mediatr</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>
