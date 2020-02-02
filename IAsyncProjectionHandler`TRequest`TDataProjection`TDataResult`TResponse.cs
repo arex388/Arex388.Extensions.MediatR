@@ -9,9 +9,13 @@ namespace Arex388.Extensions.MediatR {
 	/// <typeparam name="TDataResult">The type of data result container.</typeparam>
 	/// <typeparam name="TResponse">The type of response from the handler.</typeparam>
 	public interface IAsyncProjectionHandler<in TRequest, out TDataProjection, out TDataResult, TResponse> :
-		IAsyncProjectionHandler<TRequest, TDataProjection, TResponse>
+		IAsyncHandler<TRequest, TResponse>
 		where TRequest : IRequest<TResponse>
-		where TDataProjection : class {
+		where TDataProjection : class
+		where TDataResult : class {
+		TDataProjection GetDataProjection(
+			TRequest request);
+
 		TDataResult GetDataResult(
 			TRequest request);
 	}

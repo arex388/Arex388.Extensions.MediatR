@@ -9,6 +9,7 @@ A small set of [MediatR][2] handler interfaces for implementing the [Projection-
 - `IAsyncHandler<TRequest>` - An asynchronous non-returning request handler.
 - `IAsyncHandler<TRequest, TResponse>` - An asynchronous returning request handler.
 - `IAsyncProjectionHandler<TRequest, TDataProjection, TResponse>` - An asynchronous returning projection request handler.
+- `IAsyncProjectionHandler<TRequest, TDataProjection, TDataResult, TResponse>` - An asynchronous returning projection request handler.
 
 #### How to Use
 
