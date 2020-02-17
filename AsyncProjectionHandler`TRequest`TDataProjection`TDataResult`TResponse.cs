@@ -13,8 +13,7 @@ namespace Arex388.Extensions.MediatR {
 		IAsyncProjectionHandler<TRequest, TDataProjection, TDataResult, TResponse>
 		where TRequest : IRequest<TResponse>
 		where TDataProjection : class
-		where TDataResult : class
-		where TResponse : class {
+		where TDataResult : class {
 		public abstract TDataProjection GetDataProjection(
 			TRequest request);
 
