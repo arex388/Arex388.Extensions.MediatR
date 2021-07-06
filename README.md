@@ -2,6 +2,14 @@
 
 # Arex388.Extensions.MediatR
 
+
+
+> **DEPRECATED**
+>
+> After using the library for a while I came to realize that I was creating more work than was necessary. I've since decided to deprecate the library, stop using it and go back to using the built-in MediatR abstractions such as `IRequestHandler<TRequest, TResponse>`.
+
+
+
 A small set of [MediatR][2] handler interfaces for implementing the [Projection-Result pattern][3]. Also contains basic handler implementations, but I recommend that you implement the interfaces in your project so you can inject the appropriate services for your application.
 
 #### Interfaces
